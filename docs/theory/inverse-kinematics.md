@@ -109,3 +109,86 @@ The derivations rely on:
 - Law of Cosines
 
 ---
+
+# Law of Cosines Derivation
+
+## Initial Equation
+
+```text
+r² = l1² + l2² - 2l1l2cos(α)
+```
+
+Where:
+
+```text
+α = π - θ2
+```
+
+Using:
+
+```text
+cos(π - θ2) = -cos(θ2)
+```
+
+The equation becomes:
+
+```text
+x² + y² = l1² + l2² + 2l1l2cos(θ2)
+```
+
+---
+
+# Knee Joint Angle Equation
+
+Rearranging the equation:
+
+```text
+cos(θ2) = (x² + y² - l1² - l2²) / (2l1l2)
+```
+
+## Final Knee Angle Formula
+
+```text
+θ2 = cos⁻¹((x² + y² - l1² - l2²) / (2l1l2))
+```
+
+This equation calculates the knee joint angle required to place the robotic foot at a target coordinate.
+
+---
+
+# Hip Joint Angle Equation
+
+The hip angle is calculated using two trigonometric components.
+
+## Final Hip Angle Formula
+
+```text
+θ1 = tan⁻¹(y/x) - tan⁻¹((l2sinθ2)/(l1 + l2cosθ2))
+```
+
+This determines the orientation of the upper leg relative to the robot body.
+
+---
+
+# Workspace Analysis
+
+The calculations show that the robotic leg has a limited reachable workspace.
+
+## Reachability Condition
+
+```text
+|l1 - l2| ≤ r ≤ l1 + l2
+```
+
+This determines whether a target coordinate is physically reachable.
+
+## Workspace Considerations
+
+- Joint angle limits
+- Servo rotation constraints
+- Mechanical collisions
+- Stability boundaries
+- Maximum extension limits
+
+---
+
