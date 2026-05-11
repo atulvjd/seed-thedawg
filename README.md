@@ -72,9 +72,9 @@ Rather than hiding mistakes or failed designs, this repository will document the
 
 - [x] Repository initialized
 - [ ] Component selection and research
-- [ ] Servo testing
+- [x] Servo testing
 - [ ] Single joint prototype
-- [ ] First leg prototype
+- [x] First leg prototype
 - [ ] Standing stability test
 - [ ] Walking gait development
 - [ ] Full quadruped assembly
